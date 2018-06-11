@@ -1,0 +1,48 @@
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.gradient-one{
+	height: 300px;
+	width: 1200px;
+	background-image: linear-gradient(to top right, purple 10%, crimson 30%, orangered 50%, gold 75%);
+	
+}
+.funny-border{
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px 0;
+    margin: 60px 0;
+    position: relative;
+    border: 5px solid #5fc0ce
+}
+.funny-border:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #5fc0ce #5fc0ce;
+    z-index: 2;
+    transform: rotate(135deg);
+    background-color: lightblue;
+}
+table{
+	text-align: center;
+	
+}
+ th, tr, td{
+	border: 1px solid #000;
+}
+.big-one thead>tr>td{
+	border: none;
+	text-align: center;
+	
+}
